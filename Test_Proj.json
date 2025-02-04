@@ -1,0 +1,3372 @@
+[
+    {
+        "id": "28fac954e03ae67d",
+        "type": "tab",
+        "label": "Email Notification",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d1f5bdf400ac6a37",
+        "type": "tab",
+        "label": "Error List Efficient",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f06288a408f5d282",
+        "type": "tab",
+        "label": "Datalogger Universal",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e59631be088750af",
+        "type": "tab",
+        "label": "Draft Subscription (Scalable)",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c912ba512df65361",
+        "type": "tab",
+        "label": "Prüfstand",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "51fb7b148e5cb4a0",
+        "type": "group",
+        "z": "28fac954e03ae67d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5780e30b95fdd33c",
+            "0c6245c62c54a461",
+            "242b53a70e93ab6b",
+            "a65d954054298195",
+            "a1078a19a6cb5f32",
+            "1a9325e8a54b7359"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 892,
+        "h": 162
+    },
+    {
+        "id": "79cdb8c64bc1b899",
+        "type": "group",
+        "z": "28fac954e03ae67d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "94630cd6919f1669",
+            "928e25745815cb17",
+            "96832e2ef4a0672e",
+            "060c66a52fdd7bae",
+            "d3f77f292af5c6b9",
+            "9c3e4fd205231156",
+            "ad374a869b7c53ed",
+            "a4eaa704a253d563",
+            "6058f46138e5ee2e"
+        ],
+        "x": 94,
+        "y": 799,
+        "w": 912,
+        "h": 322
+    },
+    {
+        "id": "a30f6ebe.7f1948",
+        "type": "ui_tab",
+        "name": "Drive_Details",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f7060b83.bbd71",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b8c31697.5d28d",
+        "type": "ui_group",
+        "name": "Pos40",
+        "tab": "a30f6ebe.7f1948",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7b749fd0.a2d9b",
+        "type": "ctrlx-config",
+        "name": "ctrlX Core Connection",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "f9471984.9d0318",
+        "type": "ui_tab",
+        "name": "Overview",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "680baed8.f20008",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "f9471984.9d0318",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e3c654d.329b12",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "f9471984.9d0318",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56643e5d.5666a",
+        "type": "ui_group",
+        "name": "Drives",
+        "tab": "f9471984.9d0318",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b418a578.fcf1b",
+        "type": "ui_group",
+        "name": "Pos50",
+        "tab": "a30f6ebe.7f1948",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6eb33063.4b8528",
+        "type": "ui_group",
+        "name": "Pos60",
+        "tab": "a30f6ebe.7f1948",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2efcbcd456d40093",
+        "type": "ui_tab",
+        "name": "SYSTEM",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "475bd3271f9ae559",
+        "type": "ui_tab",
+        "name": "RFID",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "36695529a0ed64db",
+        "type": "ui_group",
+        "name": "P0040 - READ",
+        "tab": "475bd3271f9ae559",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98710286be9af8e0",
+        "type": "ui_group",
+        "name": "P0040 - WRITE",
+        "tab": "475bd3271f9ae559",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b570dbcdf7e225e7",
+        "type": "ui_tab",
+        "name": "PLC",
+        "icon": "dashboard",
+        "order": 12,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a17ae4889e361fc6",
+        "type": "ui_tab",
+        "name": "MOTION",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "06f7336f673f51c3",
+        "type": "ui_group",
+        "name": "P0050 - READ",
+        "tab": "475bd3271f9ae559",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12798ae8b8d11385",
+        "type": "ui_group",
+        "name": "P0050 - WRITE",
+        "tab": "475bd3271f9ae559",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94bad050a16ca8c5",
+        "type": "ui_group",
+        "name": "P0040",
+        "tab": "475bd3271f9ae559",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2d8f19c78d726b8c",
+        "type": "ui_group",
+        "name": "P0050",
+        "tab": "475bd3271f9ae559",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "71ddf9413ed9d9b7",
+        "type": "ui_group",
+        "name": "P0060",
+        "tab": "475bd3271f9ae559",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fac5dd05c1477381",
+        "type": "ui_group",
+        "name": "P0060 - READ",
+        "tab": "475bd3271f9ae559",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7f50e69edd192d6b",
+        "type": "ui_group",
+        "name": "P0060 - WRITE",
+        "tab": "475bd3271f9ae559",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d0fe01a9e148124",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "100ms Sub",
+        "publishIntervalMs": "10",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "400",
+        "samplingIntervalUnits": "milliseconds",
+        "errorInterval": "20",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "100",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": "1"
+    },
+    {
+        "id": "e57c88b84b021653",
+        "type": "ctrlx-config",
+        "name": "CORE",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "1c8005f1f20fb094",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "1s Sub",
+        "publishIntervalMs": "5",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "1",
+        "samplingIntervalUnits": "seconds",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
+        "id": "a2792ffc94b754f4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "CtrlX Core",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "5b3682561d28281e",
+        "type": "global-config",
+        "name": "global-config",
+        "env": [
+            {
+                "name": "nummer",
+                "value": "msg.number",
+                "type": "num"
+            }
+        ]
+    },
+    {
+        "id": "dd0c29b531839ea5",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "1min Sub",
+        "publishIntervalMs": "60",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "1",
+        "samplingIntervalUnits": "minutes",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
+        "id": "2a4b6cd0.eece8c",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "500ms Sub",
+        "publishIntervalMs": "5",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "500",
+        "samplingIntervalUnits": "milliseconds",
+        "errorInterval": "",
+        "keepaliveInterval": "",
+        "queueSize": "",
+        "deadbandValue": ""
+    },
+    {
+        "id": "6693e14c.31fae",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "f9471984.9d0318",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "ebcca0854ee703d4",
+        "type": "ui_group",
+        "name": "CORE",
+        "tab": "2efcbcd456d40093",
+        "order": 1,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "eb0dea471b1c1d75",
+        "type": "ui_group",
+        "name": "Remote Access",
+        "tab": "2efcbcd456d40093",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "264041bcb817386d",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL/counter",
+        "name": "",
+        "inputs": 0,
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "4232afdbf8a5e965",
+                "6759be173b0ac819"
+            ]
+        ]
+    },
+    {
+        "id": "6759be173b0ac819",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4232afdbf8a5e965",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "name": "function 2",
+        "func": "if (msg.payload <= 950){\n    return 0;\n}\nelse {\n    msg.payload = \"Counter Limit exceeded\";\n    msg.topic = \"Service Needed\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "92f24a9e54980ff4",
+                "6951703f2bf74605"
+            ]
+        ]
+    },
+    {
+        "id": "92f24a9e54980ff4",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5780e30b95fdd33c",
+        "type": "inject",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "0c6245c62c54a461"
+            ]
+        ]
+    },
+    {
+        "id": "0c6245c62c54a461",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "plc/app/Application/sym/GVL_ServInd/service_needed",
+        "payloadFormat": "value_type",
+        "name": "Read Service Needed",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "242b53a70e93ab6b",
+                "1a9325e8a54b7359"
+            ]
+        ]
+    },
+    {
+        "id": "242b53a70e93ab6b",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6951703f2bf74605",
+        "type": "e-mail",
+        "z": "28fac954e03ae67d",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "Constantin.Steinkopf@boschrexroth.ch",
+        "dname": "Constantin",
+        "x": 750,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a65d954054298195",
+        "type": "e-mail",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "Constantin.Steinkopf@boschrexroth.ch",
+        "dname": "Constantin",
+        "x": 650,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a1078a19a6cb5f32",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1a9325e8a54b7359",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "name": "function 3",
+        "func": "if (msg.payload.value === false) {\n    return 0; // Exit early with 0 if value is false\n} else {\n    msg.payload = \"An Error has occoured\"; // Update payload with a message\n    msg.topic = \"Service Needed\"\n}\nreturn msg; // Return the modified msg object\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "a65d954054298195",
+                "a1078a19a6cb5f32"
+            ]
+        ]
+    },
+    {
+        "id": "0873620bfa3ae5ba",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "devices/drives/HCS0x- HCS021-67906/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
+        "payloadFormat": "value",
+        "name": "Velocity Feedback Value (1)",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "0dc5ac557d02dae1"
+            ]
+        ]
+    },
+    {
+        "id": "2fbe4ad47434461d",
+        "type": "inject",
+        "z": "28fac954e03ae67d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "0873620bfa3ae5ba"
+            ]
+        ]
+    },
+    {
+        "id": "01aa21158ed80fb1",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "devices/drives/HCS0x- HCS021-67907/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
+        "payloadFormat": "value",
+        "name": "Velocity Feedback Value (2)",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 400,
+        "y": 680,
+        "wires": [
+            [
+                "9d9f57e0b38d3b97"
+            ]
+        ]
+    },
+    {
+        "id": "edd9c04e9a86c279",
+        "type": "inject",
+        "z": "28fac954e03ae67d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "01aa21158ed80fb1"
+            ]
+        ]
+    },
+    {
+        "id": "0dc5ac557d02dae1",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "name": "function 4",
+        "func": "let my_number = Number(msg.payload);\nif (my_number < 6000){\n    msg.payload = 0;\n}\nelse{\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 520,
+        "wires": [
+            [
+                "9ecc11c06e6a3170"
+            ]
+        ]
+    },
+    {
+        "id": "9ecc11c06e6a3170",
+        "type": "rising-edge",
+        "z": "28fac954e03ae67d",
+        "name": "",
+        "threshold": "0.75",
+        "x": 850,
+        "y": 520,
+        "wires": [
+            [
+                "bb8cae39d77c147f",
+                "53add818ec30a29b"
+            ]
+        ]
+    },
+    {
+        "id": "1b760efe8a3d194f",
+        "type": "e-mail",
+        "z": "28fac954e03ae67d",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "Constantin.Steinkopf@boschrexroth.ch",
+        "dname": "Constantin",
+        "x": 1170,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9d9f57e0b38d3b97",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "name": "function 5",
+        "func": "let my_number = Number(msg.payload);\nif (my_number < 1000){\n    msg.payload = 0;\n}\nelse{\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 680,
+        "wires": [
+            [
+                "2b7b4c1a9a9fd23f"
+            ]
+        ]
+    },
+    {
+        "id": "2b7b4c1a9a9fd23f",
+        "type": "rising-edge",
+        "z": "28fac954e03ae67d",
+        "name": "",
+        "threshold": "0.75",
+        "x": 870,
+        "y": 680,
+        "wires": [
+            [
+                "5d188381cdf601e3",
+                "842c499de9319ed6"
+            ]
+        ]
+    },
+    {
+        "id": "a036e53bd0614c7e",
+        "type": "e-mail",
+        "z": "28fac954e03ae67d",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "Constantin.Steinkopf@boschrexroth.ch",
+        "dname": "Constantin",
+        "x": 1170,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "53add818ec30a29b",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "name": "debug 42",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "842c499de9319ed6",
+        "type": "debug",
+        "z": "28fac954e03ae67d",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bb8cae39d77c147f",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "name": "function 6",
+        "func": "msg.payload = \"Be careful, Drive 1 is faster than 6000 rpm\";\nmsg.topic = \"Warning due to high Velocity\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 520,
+        "wires": [
+            [
+                "1b760efe8a3d194f"
+            ]
+        ]
+    },
+    {
+        "id": "5d188381cdf601e3",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "name": "function 7",
+        "func": "msg.payload = \"Be careful, Drive 2 is faster than 1000 rpm\";\nmsg.topic = \"Warning due to high Velocity\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 680,
+        "wires": [
+            [
+                "a036e53bd0614c7e"
+            ]
+        ]
+    },
+    {
+        "id": "94630cd6919f1669",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Drive",
+        "name": "",
+        "inputs": 0,
+        "x": 330,
+        "y": 840,
+        "wires": [
+            [
+                "96832e2ef4a0672e"
+            ]
+        ]
+    },
+    {
+        "id": "928e25745815cb17",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Motor",
+        "name": "",
+        "inputs": 0,
+        "x": 320,
+        "y": 1020,
+        "wires": [
+            [
+                "060c66a52fdd7bae"
+            ]
+        ]
+    },
+    {
+        "id": "96832e2ef4a0672e",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "name": "Check Drive",
+        "func": "if (msg.payload === \"OK\") {\n    return 0;\n} else {\n    msg.payload = \"Your DRIVE needs Maintanence\"; \n    msg.topic = \"Service Needed\"\n}\nreturn msg; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 840,
+        "wires": [
+            [
+                "6058f46138e5ee2e"
+            ]
+        ]
+    },
+    {
+        "id": "060c66a52fdd7bae",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "name": "Check Motor",
+        "func": "if (msg.payload === \"OK\") {\n    return 0;\n} else {\n    msg.payload = \"Your MOTOR needs Maintanence\"; \n    msg.topic = \"Service Needed\"\n}\nreturn msg; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1020,
+        "wires": [
+            [
+                "6058f46138e5ee2e"
+            ]
+        ]
+    },
+    {
+        "id": "d3f77f292af5c6b9",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL_ServInd/drive_status",
+        "name": "",
+        "inputs": 0,
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "ad374a869b7c53ed"
+            ]
+        ]
+    },
+    {
+        "id": "9c3e4fd205231156",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL_ServInd/motor_status",
+        "name": "",
+        "inputs": 0,
+        "x": 310,
+        "y": 1080,
+        "wires": [
+            [
+                "a4eaa704a253d563"
+            ]
+        ]
+    },
+    {
+        "id": "ad374a869b7c53ed",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "name": "Check Drive",
+        "func": "if (msg.payload === true) {\n    return 0;\n} else {\n    msg.payload = \"Your DRIVE needs Maintanence\"; \n    msg.topic = \"Service Needed\"\n}\nreturn msg; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "6058f46138e5ee2e"
+            ]
+        ]
+    },
+    {
+        "id": "a4eaa704a253d563",
+        "type": "function",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "name": "Check Motor",
+        "func": "if (msg.payload === true) {\n    return 0;\n} else {\n    msg.payload = \"Your MOTOR needs Maintanence\"; \n    msg.topic = \"Service Needed\"\n}\nreturn msg; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1080,
+        "wires": [
+            [
+                "6058f46138e5ee2e"
+            ]
+        ]
+    },
+    {
+        "id": "6058f46138e5ee2e",
+        "type": "e-mail",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "Constantin.Steinkopf@boschrexroth.ch",
+        "dname": "Constantin",
+        "x": 910,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "6d6d725f16f56f70",
+        "type": "inject",
+        "z": "d1f5bdf400ac6a37",
+        "name": "inject once",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "1aa61d2cee779147"
+            ]
+        ]
+    },
+    {
+        "id": "1aa61d2cee779147",
+        "type": "ctrlx-datalayer-request",
+        "z": "d1f5bdf400ac6a37",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "51b87f3397ca5462"
+            ]
+        ]
+    },
+    {
+        "id": "51b87f3397ca5462",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Axis Index, Path, Measurement ",
+        "func": "var ident_list = {}; // Initialize ident_list as an object\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    var data = {\n        path: msg.topic + \"/\" + msg.payload[i]\n    };\n\n    ident_list[msg.payload[i]] = i + 1;\n\n    node.send(data); // Sends individual messages (if needed)\n}\n\n// Send ident_list correctly inside an object\nnode.send({ payload: ident_list });",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "0b6326751c6ed6b5",
+                "5bfc47b71042164a"
+            ]
+        ]
+    },
+    {
+        "id": "5bfc47b71042164a",
+        "type": "ctrlx-datalayer-request",
+        "z": "d1f5bdf400ac6a37",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            [
+                "557e14a11beb5e8c"
+            ]
+        ]
+    },
+    {
+        "id": "557e14a11beb5e8c",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Extend Path to \"Diagnostic Number\"",
+        "func": "var data = { \n    path: msg.path + \"/subdevices/subdevice-0/sercos-idns/S-0-0390.0.0/data\",\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1530,
+        "y": 120,
+        "wires": [
+            [
+                "b60da6864e2b8559"
+            ]
+        ]
+    },
+    {
+        "id": "de0330c752604f91",
+        "type": "change",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Write file List to Live Memory",
+        "rules": [
+            {
+                "t": "set",
+                "p": "myErrorList_1",
+                "pt": "flow",
+                "to": "#:(file)::myErrorList_1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "myErrorList_2",
+                "pt": "flow",
+                "to": "#:(file)::myErrorList_2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "myErrorList_3",
+                "pt": "flow",
+                "to": "#:(file)::myErrorList_3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "ident_list",
+                "pt": "msg",
+                "to": "ident_list",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 420,
+        "wires": [
+            [
+                "0467d9d9f4fa8bb6"
+            ]
+        ]
+    },
+    {
+        "id": "0467d9d9f4fa8bb6",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Get myErrorList and append payload",
+        "func": "let myIndex = msg.ident_list[msg.measurement];\nlet myIndStr = myIndex.toString();\n\nlet searchList = \"myErrorList_\" + myIndStr;\n\n\nif (!flow.get(searchList)) {\n    flow.set(searchList, []);  // Initialize the array in flow context if not set\n}\n\nlet myList = flow.get(searchList);\nmyList.push(msg.payload);\n\nmsg.measurement = msg.measurement;\nmsg.payload = myList;\nmsg.Listname = searchList;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 420,
+        "wires": [
+            [
+                "feddf036e5d586ab",
+                "1e984e87887c76e2",
+                "78ec1142da059c6d"
+            ]
+        ]
+    },
+    {
+        "id": "f14ef72808f88195",
+        "type": "change",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Safe new List to File",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::myErrorList_1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1480,
+        "y": 360,
+        "wires": [
+            [
+                "b8f293937102a1ee"
+            ]
+        ]
+    },
+    {
+        "id": "feddf036e5d586ab",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Extract List 1",
+        "func": "if (msg.Listname === \"myErrorList_1\"){\n    msg.measurement = msg.measurement;\n    msg.payload = msg.payload;\n    return msg;\n}\nelse{\n    return 0;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 360,
+        "wires": [
+            [
+                "f14ef72808f88195",
+                "faa6c07049ed5755"
+            ]
+        ]
+    },
+    {
+        "id": "7e1be0a7ea95c4da",
+        "type": "change",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Safe new List to File",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::myErrorList_2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1480,
+        "y": 420,
+        "wires": [
+            [
+                "b8f293937102a1ee"
+            ]
+        ]
+    },
+    {
+        "id": "1e984e87887c76e2",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Extract List 2",
+        "func": "if (msg.Listname === \"myErrorList_2\"){\n    msg.payload = msg.payload;\n    msg.measurement = msg.measurement;\n    return msg;\n}\nelse{\n    return 0;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 420,
+        "wires": [
+            [
+                "7e1be0a7ea95c4da",
+                "faa6c07049ed5755"
+            ]
+        ]
+    },
+    {
+        "id": "630bab69f7865f5a",
+        "type": "change",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Safe new List to File",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::myErrorList_3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1480,
+        "y": 480,
+        "wires": [
+            [
+                "b8f293937102a1ee"
+            ]
+        ]
+    },
+    {
+        "id": "78ec1142da059c6d",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Extract List 3",
+        "func": "if (msg.Listname === \"myErrorList_3\"){\n    msg.payload = msg.payload;\n    msg.measurement = msg.measurement;\n    return msg;\n}\nelse{\n    return 0;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 480,
+        "wires": [
+            [
+                "630bab69f7865f5a",
+                "faa6c07049ed5755"
+            ]
+        ]
+    },
+    {
+        "id": "faa6c07049ed5755",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Return Key Value Map with counts",
+        "func": "let array = msg.payload;\nconst counts = {};\n\nfor (const str of array) {\n    if (counts[str]) {\n        counts[str]++;\n    } else {\n        counts[str] = 1;\n    }\n}\n\nmsg.measurement = msg.measurement;\nmsg.payload = counts;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 620,
+        "wires": [
+            [
+                "74ecc17b0b1d5e5a",
+                "822af6e0ec05fce7"
+            ]
+        ]
+    },
+    {
+        "id": "332e0b671184bac2",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "d1f5bdf400ac6a37",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "5aefbc0897c37cb5"
+            ]
+        ]
+    },
+    {
+        "id": "5aefbc0897c37cb5",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Return Diag Number if \"E\" or \"F\"",
+        "func": "let diag_number = msg.payload;\nlet len_number = diag_number.length;\nlet identifier = diag_number[len_number - 5]; // Corrected this line\nlet myPayload;\n\n// Ensure identifier-based logic works\nif (identifier === \"F\") {\n    myPayload = diag_number;\n} else if (identifier === \"E\") { // Changed to use the already extracted `identifier`\n    myPayload = diag_number;\n} else {\n    return null; // Return null instead of 0 to stop the flow in Node-RED\n}\n\n// Validate msg.topic and extract match\nconst inputString = msg.topic;\nconst match = inputString.match(/drives\\/(.*?)\\/subdevices/);\n\nif (!match || !match[1]) {\n    return null; // Handle the case where no match is found\n}\n\nvar data = {\n    measurement: match[1], // Extracted value from match\n    payload: myPayload\n};\n\n// Send data in Node-RED\nnode.send(data);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "de0330c752604f91"
+            ]
+        ]
+    },
+    {
+        "id": "b8f293937102a1ee",
+        "type": "debug",
+        "z": "d1f5bdf400ac6a37",
+        "name": "debug 169",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b60da6864e2b8559",
+        "type": "join",
+        "z": "d1f5bdf400ac6a37",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "path",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "2",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "61506269a771f2e3"
+            ]
+        ]
+    },
+    {
+        "id": "61506269a771f2e3",
+        "type": "function",
+        "z": "d1f5bdf400ac6a37",
+        "name": "Flat",
+        "func": "msg.path = msg.path.flat();\nmsg.action = \"subscribe\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "332e0b671184bac2"
+            ]
+        ]
+    },
+    {
+        "id": "74ecc17b0b1d5e5a",
+        "type": "influxdb out",
+        "z": "d1f5bdf400ac6a37",
+        "influxdb": "a2792ffc94b754f4",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "Bosch Rexroth",
+        "bucket": "New Error List",
+        "x": 1040,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "822af6e0ec05fce7",
+        "type": "debug",
+        "z": "d1f5bdf400ac6a37",
+        "name": "debug 170",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0b6326751c6ed6b5",
+        "type": "change",
+        "z": "d1f5bdf400ac6a37",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ident_list",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 60,
+        "wires": [
+            [
+                "da7979028e9c153d"
+            ]
+        ]
+    },
+    {
+        "id": "da7979028e9c153d",
+        "type": "debug",
+        "z": "d1f5bdf400ac6a37",
+        "name": "debug 174",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a64ed766e42808d1",
+        "type": "catch",
+        "z": "d1f5bdf400ac6a37",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "332e0b671184bac2"
+            ]
+        ]
+    },
+    {
+        "id": "1a1ec74452be8dab",
+        "type": "inject",
+        "z": "f06288a408f5d282",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "4408112263391029"
+            ]
+        ]
+    },
+    {
+        "id": "4408112263391029",
+        "type": "ctrlx-datalayer-request",
+        "z": "f06288a408f5d282",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "d7a461d681a4c673"
+            ]
+        ]
+    },
+    {
+        "id": "d7a461d681a4c673",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Axis Index, Path, Measurement ",
+        "func": "var payload = []; \n\nfor (var i = 0; i < msg.payload.length; i++) { \n var data = { \n    path: msg.topic + \"/\" + msg.payload[i],\n    measurement: msg.payload[i],\n    axis_index: i\n }; \n\n node.send(data); \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "e0fe231741159342"
+            ]
+        ]
+    },
+    {
+        "id": "e0fe231741159342",
+        "type": "ctrlx-datalayer-request",
+        "z": "f06288a408f5d282",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "65711f55b58e1d43"
+            ]
+        ]
+    },
+    {
+        "id": "65711f55b58e1d43",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Extend Path to \"sercos-idns\"",
+        "func": "var data = { \n    path: msg.path + \"/subdevices/subdevice-0/sercos-idns\",\n    measurement: msg.measurement,\n    axis_index: msg.axis_index\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 220,
+        "wires": [
+            [
+                "3d3c2312abfa0955"
+            ]
+        ]
+    },
+    {
+        "id": "3d3c2312abfa0955",
+        "type": "ctrlx-datalayer-request",
+        "z": "f06288a408f5d282",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "browse \"sercos-idns\" ",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "dc0b0ef3cd2e5e68",
+                "43bdbf00ca67f2ea",
+                "8363b9b3afbeb7f9",
+                "d893c847819329c0",
+                "b8ddb6f8842c789e",
+                "ddc32357581e0310",
+                "7a0a1fa60a1c1bc6"
+            ]
+        ]
+    },
+    {
+        "id": "dc0b0ef3cd2e5e68",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Velocity Feedback",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0535.0.0/data\",\n    measurement: \"Velocity - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "cabbd35e398599cb",
+                "b1e1048e280b8b49"
+            ]
+        ]
+    },
+    {
+        "id": "43bdbf00ca67f2ea",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Torque",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0084.0.0/data\",\n    measurement: \"Torque - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "5783b77d47896c78",
+                "596584b49685323f"
+            ]
+        ]
+    },
+    {
+        "id": "8363b9b3afbeb7f9",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Acceleration",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0164.0.0/data\",\n    measurement: \"Acceleration - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "8adacf0c2afda467",
+                "c3d7667ee4b95e85"
+            ]
+        ]
+    },
+    {
+        "id": "d893c847819329c0",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Power Consumption",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0382.0.0/data\",\n    measurement: \"Power Consumption - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 660,
+        "wires": [
+            [
+                "3b2bbfcf011df81f",
+                "bc64bfcb0f0acfc1"
+            ]
+        ]
+    },
+    {
+        "id": "b8ddb6f8842c789e",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Motor Temperature",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0383.0.0/data\",\n    measurement: \"Motor Temperature - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 780,
+        "wires": [
+            [
+                "d10d3729c3bcad2f",
+                "c580b95068a75ff2"
+            ]
+        ]
+    },
+    {
+        "id": "ddc32357581e0310",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Motor Zwischenkreisspannung",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0380.0.0/data\",\n    measurement: \"Zwischenkreisspannung - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 880,
+        "wires": [
+            [
+                "7ece81e559c7eec8",
+                "90611e249120be68"
+            ]
+        ]
+    },
+    {
+        "id": "7a0a1fa60a1c1bc6",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Read Diagnostic Message",
+        "func": "var data = { \n    path: msg.path + \"/S-0-0390.0.0/data\",\n    measurement: \"Diagnostic Message - \" + msg.measurement,\n    axis_index: msg.axis_index,\n    action: \"subscribe\"\n}; \n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 980,
+        "wires": [
+            [
+                "5b7c5827d5f3d929",
+                "5b3ae7e6b5d6cd0f"
+            ]
+        ]
+    },
+    {
+        "id": "cabbd35e398599cb",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 380,
+        "wires": [
+            [
+                "313849c5d94c2c3f",
+                "250f04eacff75bfc"
+            ]
+        ]
+    },
+    {
+        "id": "5783b77d47896c78",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 480,
+        "wires": [
+            [
+                "706aea0b3925afbf"
+            ]
+        ]
+    },
+    {
+        "id": "8adacf0c2afda467",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 580,
+        "wires": [
+            [
+                "f086f0895dab9f23"
+            ]
+        ]
+    },
+    {
+        "id": "3b2bbfcf011df81f",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 700,
+        "wires": [
+            [
+                "227d34ffd0530292"
+            ]
+        ]
+    },
+    {
+        "id": "d10d3729c3bcad2f",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 800,
+        "wires": [
+            [
+                "54f886964270ea0a"
+            ]
+        ]
+    },
+    {
+        "id": "7ece81e559c7eec8",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 900,
+        "wires": [
+            [
+                "fd32431c199e8f12"
+            ]
+        ]
+    },
+    {
+        "id": "5b7c5827d5f3d929",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 1000,
+        "wires": [
+            [
+                "0cddd438719e0e30"
+            ]
+        ]
+    },
+    {
+        "id": "b1e1048e280b8b49",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "313849c5d94c2c3f"
+            ]
+        ]
+    },
+    {
+        "id": "313849c5d94c2c3f",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 360,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "596584b49685323f",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 440,
+        "wires": [
+            [
+                "706aea0b3925afbf"
+            ]
+        ]
+    },
+    {
+        "id": "706aea0b3925afbf",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 460,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "c3d7667ee4b95e85",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 540,
+        "wires": [
+            [
+                "f086f0895dab9f23"
+            ]
+        ]
+    },
+    {
+        "id": "f086f0895dab9f23",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 560,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "bc64bfcb0f0acfc1",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "227d34ffd0530292"
+            ]
+        ]
+    },
+    {
+        "id": "227d34ffd0530292",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 660,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "c580b95068a75ff2",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 760,
+        "wires": [
+            [
+                "54f886964270ea0a"
+            ]
+        ]
+    },
+    {
+        "id": "54f886964270ea0a",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 780,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "90611e249120be68",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 860,
+        "wires": [
+            [
+                "fd32431c199e8f12"
+            ]
+        ]
+    },
+    {
+        "id": "fd32431c199e8f12",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 880,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "5b3ae7e6b5d6cd0f",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Save Measurement",
+        "func": "var data = {\n    measurement: msg.measurement\n};\n\nnode.send(data); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 960,
+        "wires": [
+            [
+                "0cddd438719e0e30"
+            ]
+        ]
+    },
+    {
+        "id": "0cddd438719e0e30",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "Force to Number",
+        "func": "if (msg.payload){\n    let diag_number = msg.payload;\n    let len_number = diag_number.length;\n    let identifier = diag_number[len_number - 5]; // Corrected this line\n    let myPayload;\n\n    // Ensure identifier-based logic works\n    if (identifier === \"F\") {\n        msg.payload = diag_number;\n    } else if (identifier === \"E\") { // Changed to use the already extracted `identifier`\n        msg.payload = diag_number;\n    } else {\n        return null; // Return null instead of 0 to stop the flow in Node-RED\n    }\n}\nelse\n{\n    if (msg.measurement) {\n        context.measurement = msg.measurement;\n    }\n    else {\n        msg.measurement = context.measurement;\n    }\n    return null;\n}\n\nif (msg.measurement){\n    context.measurement = msg.measurement;\n}\nelse{\n    msg.measurement = context.measurement;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 980,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "37a58c6b2ea2b9d0",
+        "type": "influxdb out",
+        "z": "f06288a408f5d282",
+        "influxdb": "a2792ffc94b754f4",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Bosch Rexroth",
+        "bucket": "All_In_One",
+        "x": 1520,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "250f04eacff75bfc",
+        "type": "debug",
+        "z": "f06288a408f5d282",
+        "name": "debug 168",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7046239a88016b90",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1120,
+        "wires": [
+            [
+                "bbf083b304a7880d"
+            ]
+        ]
+    },
+    {
+        "id": "e566d58f7874ba09",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1160,
+        "wires": [
+            [
+                "eeaabbec8eadd82c"
+            ]
+        ]
+    },
+    {
+        "id": "817e94bce26d5013",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1200,
+        "wires": [
+            [
+                "19363dd6619281a6"
+            ]
+        ]
+    },
+    {
+        "id": "f8db6603abb5ffed",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1240,
+        "wires": [
+            [
+                "d3d111f2e133cc84"
+            ]
+        ]
+    },
+    {
+        "id": "bbf083b304a7880d",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "function 50",
+        "func": "msg.payload = msg.payload;\nmsg.measurement = \"Core 0 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1120,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "eeaabbec8eadd82c",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "function 51",
+        "func": "msg.payload = msg.payload;\nmsg.measurement = \"Core 1 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1160,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "19363dd6619281a6",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "function 52",
+        "func": "msg.payload = msg.payload;\nmsg.measurement = \"Core 2 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1200,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "d3d111f2e133cc84",
+        "type": "function",
+        "z": "f06288a408f5d282",
+        "name": "function 53",
+        "func": "msg.payload = msg.payload;\nmsg.measurement = \"Core 3 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1240,
+        "wires": [
+            [
+                "37a58c6b2ea2b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "6d1f9e50d0efe828",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "8742acd509f34d92"
+            ]
+        ]
+    },
+    {
+        "id": "6e43bfe82e3258d2",
+        "type": "inject",
+        "z": "e59631be088750af",
+        "name": "Inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "6d1f9e50d0efe828"
+            ]
+        ]
+    },
+    {
+        "id": "8742acd509f34d92",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Define Paths",
+        "func": "for (var i = 0; i < msg.payload.length; i++) { \n   var data = { \n      path: msg.topic + \"/\" + msg.payload[i] + \"/subdevices/subdevice-0/sercos-idns\"\n   }; \n\n   node.send(data); \n}\n\n// {}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "96e4bf362fe4de11"
+            ]
+        ]
+    },
+    {
+        "id": "96e4bf362fe4de11",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "browse \"sercos-idns\" ",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "3362fbaf691f3feb"
+            ]
+        ]
+    },
+    {
+        "id": "13922bb0e6ce2f5b",
+        "type": "influxdb out",
+        "z": "e59631be088750af",
+        "influxdb": "a2792ffc94b754f4",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "Bosch Rexroth",
+        "bucket": "Drives Parameters",
+        "x": 1140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e266f159476cd1b2",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "162dca900cd8a0ba"
+            ]
+        ]
+    },
+    {
+        "id": "162dca900cd8a0ba",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Force to Number",
+        "func": "msg.payload = Number(msg.payload);\n\nconst my_Device_Name = msg.topic.match(/drives\\/(.*?)\\/subdevices/);\nconst my_Variable = msg.topic.match(/sercos-idns\\/(.*?)\\/data/);\n\nif (my_Device_Name && my_Variable) {\n    msg.measurement = my_Device_Name[1] + \" - \" + my_Variable[1];\n} else {\n    msg.measurement = \"Parsing error\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 200,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "300455a3fb95f472",
+        "type": "join",
+        "z": "e59631be088750af",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "path",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "2",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1310,
+        "y": 80,
+        "wires": [
+            [
+                "fc75584ca0c5e52a"
+            ]
+        ]
+    },
+    {
+        "id": "3362fbaf691f3feb",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Define Data to Store",
+        "func": "let arr_path = []; \narr_path[0] = msg.path + \"/S-0-0535.0.0/data\";  //Velocity\narr_path[1] = msg.path + \"/S-0-0084.0.0/data\";  //Torque\narr_path[2] = msg.path + \"/S-0-0164.0.0/data\";  //Acceleration\narr_path[3] = msg.path + \"/S-0-0382.0.0/data\";  //Mains Power\narr_path[4] = msg.path + \"/S-0-0383.0.0/data\";  //Motor Temperature\narr_path[5] = msg.path + \"/S-0-0380.0.0/data\";  //DC Link Voltage\n\nmsg.path = arr_path;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 80,
+        "wires": [
+            [
+                "300455a3fb95f472"
+            ]
+        ]
+    },
+    {
+        "id": "fc75584ca0c5e52a",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Flat",
+        "func": "msg.path = msg.path.flat();\nmsg.action = \"subscribe\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "e266f159476cd1b2"
+            ]
+        ]
+    },
+    {
+        "id": "539b4ccee2f4bd97",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "6b0d7cc96d5a9881"
+            ]
+        ]
+    },
+    {
+        "id": "0028723f7ea912f8",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core1/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "6516a009aa295878"
+            ]
+        ]
+    },
+    {
+        "id": "7d14307f0b13c3ba",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core2/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "9939121982dc98b2"
+            ]
+        ]
+    },
+    {
+        "id": "8ac6ebf48eec3919",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core3/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "89b72c5ad639f33d"
+            ]
+        ]
+    },
+    {
+        "id": "6b0d7cc96d5a9881",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Core 0 CPU",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Core 0 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "6516a009aa295878",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Core 1 CPU",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Core 1 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 460,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "9939121982dc98b2",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Core 2 CPU",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Core 2 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "89b72c5ad639f33d",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Core 3 CPU",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Core 3 CPU\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "2dcd4d55a1fe4980",
+        "type": "catch",
+        "z": "e59631be088750af",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "e266f159476cd1b2"
+            ]
+        ]
+    },
+    {
+        "id": "74ace93d90e60361",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/health/temperature-core/value",
+        "name": "",
+        "inputs": 0,
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "1069b0b170f6279e"
+            ]
+        ]
+    },
+    {
+        "id": "57d5a0083274f1d4",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/health/temperature-system/value",
+        "name": "",
+        "inputs": 0,
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "6874c480db4e2de5"
+            ]
+        ]
+    },
+    {
+        "id": "1069b0b170f6279e",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Temperature Core",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Temperature Core\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "6874c480db4e2de5",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Temperature System",
+        "func": "msg.payload = Number(msg.payload);\nmsg.measurement = \"Temperature System\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 380,
+        "wires": [
+            [
+                "13922bb0e6ce2f5b"
+            ]
+        ]
+    },
+    {
+        "id": "a3c881f75da112a5",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "e35d797a54a8c3d1"
+            ]
+        ]
+    },
+    {
+        "id": "6e77a3b2cf3fcd60",
+        "type": "inject",
+        "z": "e59631be088750af",
+        "name": "Inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "a3c881f75da112a5"
+            ]
+        ]
+    },
+    {
+        "id": "e35d797a54a8c3d1",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Define Paths",
+        "func": "for (var i = 0; i < msg.payload.length; i++) { \n   var data = { \n      path: msg.topic + \"/\" + msg.payload[i] + \"/subdevices/subdevice-0/sercos-idns\"\n   }; \n\n   node.send(data); \n}\n\n// {}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "44d0c86a7a034afe"
+            ]
+        ]
+    },
+    {
+        "id": "44d0c86a7a034afe",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "browse \"sercos-idns\" ",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 800,
+        "y": 660,
+        "wires": [
+            [
+                "b942bc172a54917b"
+            ]
+        ]
+    },
+    {
+        "id": "b942bc172a54917b",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Define Data to Store",
+        "func": "let arr_path = []; \narr_path[0] = msg.path + \"/P-0-0440.0.0/data\";      // Output Current Value\n\narr_path[1] = msg.path + \"/P-0-0529.0.0/data\";      // Scaling of Stall Current Limit\narr_path[2] = msg.path + \"/S-0-0001.0.0/data\";      // NC Cycle Time\narr_path[3] = msg.path + \"/S-0-0002.0.0/data\";      // Sercos Cycle Time \n\n\narr_path[4] = msg.path + \"/S-0-0383.0.0/data\"; \narr_path[5] = msg.path + \"/S-0-0380.0.0/data\"; \n\nmsg.path = arr_path;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cb477301ed16b0a",
+        "type": "function",
+        "z": "c912ba512df65361",
+        "name": "100ms Block",
+        "func": "let arr_path = []; \n\n// HMI\narr_path[0] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/P_P1/rIst\";\narr_path[1] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/P_P2/rIst\";\narr_path[2] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/P_P3/rIst\";\narr_path[3] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/Volumenstrom_Q1/rIst\";\narr_path[4] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/Volumenstrom_Q_0_600/rIst\";\narr_path[5] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/Volumenstrom_Q_0_300/rIst\";\narr_path[6] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/Volumenstrom_Q_0_060/rIst\";\narr_path[7] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/Volumenstrom_Q_P2/rIst\";\n\n// HMI, Diverse Anzeigen\narr_path[8] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStrom_Abgang55_kW\";\narr_path[9] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStrom_Abgang15_kW\";\narr_path[10] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStrom_Abgang7_kW\";\n\n// EFC\narr_path[11] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rZwischenkreisspannung\";\narr_path[12] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rAusgangsfrequenz\";\narr_path[13] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rSollFrequenz\";\narr_path[14] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rAusgangsspannung\";\narr_path[15] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rAusgangsstrom\";\narr_path[16] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rAusgangsLeistung\";\narr_path[17] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rAusgangsrehmomen\";\n\nmsg.path = arr_path;\nmsg.action = \"subscribe\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 60,
+        "wires": [
+            [
+                "1425da02ab5383e3"
+            ]
+        ]
+    },
+    {
+        "id": "74ff7c52922d83cd",
+        "type": "function",
+        "z": "c912ba512df65361",
+        "name": "500ms Block",
+        "func": "let arr_path = []; \n\n//HMI, Diverse Anzeigen\narr_path[0] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStromAbTrafostation_Rexroth\";\narr_path[1] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStrom_Pruefstand\";\narr_path[2] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStromP2\";\narr_path[3] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rStromP3\";\n\nmsg.path = arr_path;\nmsg.action = \"subscribe\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "c622e6a2437b7fcc"
+            ]
+        ]
+    },
+    {
+        "id": "a638ab6a58529a69",
+        "type": "function",
+        "z": "c912ba512df65361",
+        "name": "1min Block",
+        "func": "let arr_path = []; \n\n// HMI, Diverse Anzeigen\narr_path[1] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rOelstand_Behaelter_1\";\narr_path[2] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rOelstand_Behaelter_2\";\narr_path[3] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/DiverseAnzeigen/rTemperatur_Behaelter\";\n\n// EFC\narr_path[4] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/EFC/rModultemparatur\";\n\n//System\narr_path[5] = \"system/health/temperature-core/value\";\narr_path[6] = \"system/health/temperature-system/value\";\n\nmsg.path = arr_path;\nmsg.action = \"subscribe\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "2d622344b61cba52"
+            ]
+        ]
+    },
+    {
+        "id": "fb57d296459a6f22",
+        "type": "function",
+        "z": "c912ba512df65361",
+        "name": "1s Block",
+        "func": "let arr_path = []; \n\n// EFC\narr_path[0] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_EFC/boRunCommand\";\n\n// Error Bits\narr_path[1] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/dwErrorBits_01\";\narr_path[2] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/dwErrorBits_02\";\narr_path[3] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/dwErrorBits_03\";\narr_path[4] = \"opcuaclient/OPC_Client_Pruefstand/i=85/ns=8;i=2000/ns=8;s=plc/app/Application/sym/GVL_HMI/dwErrorBits_04\";\n\n// System\narr_path[5] = \"system/resources/cpu/core0/usage\";\narr_path[6] = \"system/resources/cpu/core1/usage\";\narr_path[7] = \"system/resources/cpu/core2/usage\";\narr_path[8] = \"system/resources/cpu/core3/usage\";\narr_path[9] = \"system/resources/cpu/all/utilization\";\narr_path[10] = \"system/resources/cpu/all/usage\";\n\nmsg.path = arr_path;\nmsg.action = \"subscribe\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "84465203bcc79747"
+            ]
+        ]
+    },
+    {
+        "id": "9685756dd76beb60",
+        "type": "function",
+        "z": "c912ba512df65361",
+        "name": "Payload, Measurement",
+        "func": "//Payload\nmsg.payload = Number(msg.payload);\n\n// Create a useful measurement name (extract last parts of path)\nconst parts = msg.topic.split('/');\nif (parts.length < 2) {\n    throw new Error(\"Input string must contain at least two segments\");\n}\nconst secondLast = parts[parts.length - 2];\nconst last = parts[parts.length - 1];\nmsg.measurement = `${secondLast} - ${last}`;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "511db6106b2df53e"
+            ]
+        ]
+    },
+    {
+        "id": "1425da02ab5383e3",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "c912ba512df65361",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "100ms",
+        "inputs": 1,
+        "x": 450,
+        "y": 60,
+        "wires": [
+            [
+                "9685756dd76beb60"
+            ]
+        ]
+    },
+    {
+        "id": "c622e6a2437b7fcc",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "c912ba512df65361",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "",
+        "name": "500ms",
+        "inputs": 1,
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "9685756dd76beb60"
+            ]
+        ]
+    },
+    {
+        "id": "84465203bcc79747",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "c912ba512df65361",
+        "subscription": "1c8005f1f20fb094",
+        "path": "",
+        "name": "1s",
+        "inputs": 1,
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "9685756dd76beb60",
+                "5f9f31815d55cbf8"
+            ]
+        ]
+    },
+    {
+        "id": "2d622344b61cba52",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "c912ba512df65361",
+        "subscription": "dd0c29b531839ea5",
+        "path": "",
+        "name": "1min",
+        "inputs": 1,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "9685756dd76beb60"
+            ]
+        ]
+    },
+    {
+        "id": "74982e55d190cb84",
+        "type": "inject",
+        "z": "c912ba512df65361",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "7cb477301ed16b0a",
+                "74ff7c52922d83cd",
+                "fb57d296459a6f22",
+                "a638ab6a58529a69"
+            ]
+        ]
+    },
+    {
+        "id": "511db6106b2df53e",
+        "type": "influxdb out",
+        "z": "c912ba512df65361",
+        "influxdb": "a2792ffc94b754f4",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "Bosch Rexroth",
+        "bucket": "Pruefstand Node",
+        "x": 1000,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5f9f31815d55cbf8",
+        "type": "debug",
+        "z": "c912ba512df65361",
+        "name": "debug 175",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    }
+]

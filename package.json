@@ -1,0 +1,14 @@
+{
+    "name": "NodeRed_Projects_Test",
+    "description": "Project to test functionality on ctrlX Core",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red-contrib-ctrlx-automation": "1.9.7"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "Test_Proj.json",
+            "credentialsFile": "Test_Proj_cred.json"
+        }
+    }
+}
