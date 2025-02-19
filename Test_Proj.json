@@ -48,6 +48,22 @@
         "env": []
     },
     {
+        "id": "e129867d2751b20d",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "72f53ff971ea2714",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
