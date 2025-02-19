@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "7aedbeff89cff8e0",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
@@ -3384,5 +3392,34 @@
         "x": 670,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "dffc75069db05262",
+        "type": "ctrlx-datalayer-request",
+        "z": "7aedbeff89cff8e0",
+        "method": "READ",
+        "path": "",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae1cad9ea91973b1",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "7aedbeff89cff8e0",
+        "path": "",
+        "name": "",
+        "inputs": 0,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            []
+        ]
     }
 ]
