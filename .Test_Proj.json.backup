@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "bcca1e6006854fcc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
@@ -93,6 +101,18 @@
         "y": 799,
         "w": 912,
         "h": 322
+    },
+    {
+        "id": "5b3682561d28281e",
+        "type": "global-config",
+        "name": "global-config",
+        "env": [
+            {
+                "name": "nummer",
+                "value": "msg.number",
+                "type": "num"
+            }
+        ]
     },
     {
         "id": "a30f6ebe.7f1948",
@@ -210,13 +230,6 @@
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "7b749fd0.a2d9b",
-        "type": "ctrlx-config",
-        "name": "ctrlX Core Connection",
-        "hostname": "localhost",
-        "debug": false
     },
     {
         "id": "f9471984.9d0318",
@@ -418,47 +431,6 @@
         "className": ""
     },
     {
-        "id": "3d0fe01a9e148124",
-        "type": "ctrlx-config-subscription",
-        "device": "7b749fd0.a2d9b",
-        "name": "100ms Sub",
-        "publishIntervalMs": "10",
-        "publishIntervalUnits": "seconds",
-        "samplingInterval": "400",
-        "samplingIntervalUnits": "milliseconds",
-        "errorInterval": "20",
-        "errorIntervalUnits": "seconds",
-        "keepaliveInterval": "",
-        "keepaliveIntervalUnits": "minutes",
-        "queueSize": "100",
-        "queueBehaviour": "DiscardOldest",
-        "deadbandValue": "1"
-    },
-    {
-        "id": "e57c88b84b021653",
-        "type": "ctrlx-config",
-        "name": "CORE",
-        "hostname": "localhost",
-        "debug": false
-    },
-    {
-        "id": "1c8005f1f20fb094",
-        "type": "ctrlx-config-subscription",
-        "device": "7b749fd0.a2d9b",
-        "name": "1s Sub",
-        "publishIntervalMs": "5",
-        "publishIntervalUnits": "seconds",
-        "samplingInterval": "1",
-        "samplingIntervalUnits": "seconds",
-        "errorInterval": "",
-        "errorIntervalUnits": "seconds",
-        "keepaliveInterval": "",
-        "keepaliveIntervalUnits": "minutes",
-        "queueSize": "",
-        "queueBehaviour": "DiscardOldest",
-        "deadbandValue": ""
-    },
-    {
         "id": "a2792ffc94b754f4",
         "type": "influxdb",
         "hostname": "127.0.0.1",
@@ -472,49 +444,6 @@
         "url": "http://localhost:8086",
         "timeout": "10",
         "rejectUnauthorized": true
-    },
-    {
-        "id": "5b3682561d28281e",
-        "type": "global-config",
-        "name": "global-config",
-        "env": [
-            {
-                "name": "nummer",
-                "value": "msg.number",
-                "type": "num"
-            }
-        ]
-    },
-    {
-        "id": "dd0c29b531839ea5",
-        "type": "ctrlx-config-subscription",
-        "device": "7b749fd0.a2d9b",
-        "name": "1min Sub",
-        "publishIntervalMs": "60",
-        "publishIntervalUnits": "seconds",
-        "samplingInterval": "1",
-        "samplingIntervalUnits": "minutes",
-        "errorInterval": "",
-        "errorIntervalUnits": "seconds",
-        "keepaliveInterval": "",
-        "keepaliveIntervalUnits": "minutes",
-        "queueSize": "",
-        "queueBehaviour": "DiscardOldest",
-        "deadbandValue": ""
-    },
-    {
-        "id": "2a4b6cd0.eece8c",
-        "type": "ctrlx-config-subscription",
-        "device": "7b749fd0.a2d9b",
-        "name": "500ms Sub",
-        "publishIntervalMs": "5",
-        "publishIntervalUnits": "seconds",
-        "samplingInterval": "500",
-        "samplingIntervalUnits": "milliseconds",
-        "errorInterval": "",
-        "keepaliveInterval": "",
-        "queueSize": "",
-        "deadbandValue": ""
     },
     {
         "id": "6693e14c.31fae",
@@ -549,21 +478,83 @@
         "className": ""
     },
     {
-        "id": "264041bcb817386d",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "28fac954e03ae67d",
-        "subscription": "3d0fe01a9e148124",
-        "path": "plc/app/Application/sym/GVL/counter",
-        "name": "",
-        "inputs": 0,
-        "x": 200,
-        "y": 280,
-        "wires": [
-            [
-                "4232afdbf8a5e965",
-                "6759be173b0ac819"
-            ]
-        ]
+        "id": "7b749fd0.a2d9b",
+        "type": "ctrlx-config",
+        "name": "ctrlX Core Connection",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "e57c88b84b021653",
+        "type": "ctrlx-config",
+        "name": "CORE",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "3d0fe01a9e148124",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "100ms Sub",
+        "publishIntervalMs": "10",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "400",
+        "samplingIntervalUnits": "milliseconds",
+        "errorInterval": "20",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "100",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": "1"
+    },
+    {
+        "id": "1c8005f1f20fb094",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "1s Sub",
+        "publishIntervalMs": "5",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "1",
+        "samplingIntervalUnits": "seconds",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
+        "id": "dd0c29b531839ea5",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "1min Sub",
+        "publishIntervalMs": "60",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "1",
+        "samplingIntervalUnits": "minutes",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
+        "id": "2a4b6cd0.eece8c",
+        "type": "ctrlx-config-subscription",
+        "device": "7b749fd0.a2d9b",
+        "name": "500ms Sub",
+        "publishIntervalMs": "5",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "500",
+        "samplingIntervalUnits": "milliseconds",
+        "errorInterval": "",
+        "keepaliveInterval": "",
+        "queueSize": "",
+        "deadbandValue": ""
     },
     {
         "id": "6759be173b0ac819",
@@ -648,27 +639,6 @@
         "wires": [
             [
                 "0c6245c62c54a461"
-            ]
-        ]
-    },
-    {
-        "id": "0c6245c62c54a461",
-        "type": "ctrlx-datalayer-request",
-        "z": "28fac954e03ae67d",
-        "g": "51fb7b148e5cb4a0",
-        "device": "7b749fd0.a2d9b",
-        "method": "READ",
-        "path": "plc/app/Application/sym/GVL_ServInd/service_needed",
-        "payloadFormat": "value_type",
-        "name": "Read Service Needed",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 380,
-        "y": 60,
-        "wires": [
-            [
-                "242b53a70e93ab6b",
-                "1a9325e8a54b7359"
             ]
         ]
     },
@@ -765,25 +735,6 @@
         ]
     },
     {
-        "id": "0873620bfa3ae5ba",
-        "type": "ctrlx-datalayer-request",
-        "z": "28fac954e03ae67d",
-        "device": "7b749fd0.a2d9b",
-        "method": "READ",
-        "path": "devices/drives/HCS0x- HCS021-67906/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
-        "payloadFormat": "value",
-        "name": "Velocity Feedback Value (1)",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 400,
-        "y": 520,
-        "wires": [
-            [
-                "0dc5ac557d02dae1"
-            ]
-        ]
-    },
-    {
         "id": "2fbe4ad47434461d",
         "type": "inject",
         "z": "28fac954e03ae67d",
@@ -809,25 +760,6 @@
         "wires": [
             [
                 "0873620bfa3ae5ba"
-            ]
-        ]
-    },
-    {
-        "id": "01aa21158ed80fb1",
-        "type": "ctrlx-datalayer-request",
-        "z": "28fac954e03ae67d",
-        "device": "7b749fd0.a2d9b",
-        "method": "READ",
-        "path": "devices/drives/HCS0x- HCS021-67907/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
-        "payloadFormat": "value",
-        "name": "Velocity Feedback Value (2)",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 400,
-        "y": 680,
-        "wires": [
-            [
-                "9d9f57e0b38d3b97"
             ]
         ]
     },
@@ -1039,40 +971,6 @@
         ]
     },
     {
-        "id": "94630cd6919f1669",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "28fac954e03ae67d",
-        "g": "79cdb8c64bc1b899",
-        "subscription": "3d0fe01a9e148124",
-        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Drive",
-        "name": "",
-        "inputs": 0,
-        "x": 330,
-        "y": 840,
-        "wires": [
-            [
-                "96832e2ef4a0672e"
-            ]
-        ]
-    },
-    {
-        "id": "928e25745815cb17",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "28fac954e03ae67d",
-        "g": "79cdb8c64bc1b899",
-        "subscription": "3d0fe01a9e148124",
-        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Motor",
-        "name": "",
-        "inputs": 0,
-        "x": 320,
-        "y": 1020,
-        "wires": [
-            [
-                "060c66a52fdd7bae"
-            ]
-        ]
-    },
-    {
         "id": "96832e2ef4a0672e",
         "type": "function",
         "z": "28fac954e03ae67d",
@@ -1111,40 +1009,6 @@
         "wires": [
             [
                 "6058f46138e5ee2e"
-            ]
-        ]
-    },
-    {
-        "id": "d3f77f292af5c6b9",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "28fac954e03ae67d",
-        "g": "79cdb8c64bc1b899",
-        "subscription": "3d0fe01a9e148124",
-        "path": "plc/app/Application/sym/GVL_ServInd/drive_status",
-        "name": "",
-        "inputs": 0,
-        "x": 310,
-        "y": 920,
-        "wires": [
-            [
-                "ad374a869b7c53ed"
-            ]
-        ]
-    },
-    {
-        "id": "9c3e4fd205231156",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "28fac954e03ae67d",
-        "g": "79cdb8c64bc1b899",
-        "subscription": "3d0fe01a9e148124",
-        "path": "plc/app/Application/sym/GVL_ServInd/motor_status",
-        "name": "",
-        "inputs": 0,
-        "x": 310,
-        "y": 1080,
-        "wires": [
-            [
-                "a4eaa704a253d563"
             ]
         ]
     },
@@ -1209,6 +1073,150 @@
         "wires": []
     },
     {
+        "id": "0c6245c62c54a461",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "g": "51fb7b148e5cb4a0",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "plc/app/Application/sym/GVL_ServInd/service_needed",
+        "payloadFormat": "value_type",
+        "name": "Read Service Needed",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "242b53a70e93ab6b",
+                "1a9325e8a54b7359"
+            ]
+        ]
+    },
+    {
+        "id": "0873620bfa3ae5ba",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "devices/drives/HCS0x- HCS021-67906/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
+        "payloadFormat": "value",
+        "name": "Velocity Feedback Value (1)",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "0dc5ac557d02dae1"
+            ]
+        ]
+    },
+    {
+        "id": "01aa21158ed80fb1",
+        "type": "ctrlx-datalayer-request",
+        "z": "28fac954e03ae67d",
+        "device": "7b749fd0.a2d9b",
+        "method": "READ",
+        "path": "devices/drives/HCS0x- HCS021-67907/subdevices/subdevice-0/sercos-idns/S-0-0040.0.0/data",
+        "payloadFormat": "value",
+        "name": "Velocity Feedback Value (2)",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 400,
+        "y": 680,
+        "wires": [
+            [
+                "9d9f57e0b38d3b97"
+            ]
+        ]
+    },
+    {
+        "id": "264041bcb817386d",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL/counter",
+        "name": "",
+        "inputs": 0,
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "4232afdbf8a5e965",
+                "6759be173b0ac819"
+            ]
+        ]
+    },
+    {
+        "id": "94630cd6919f1669",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Drive",
+        "name": "",
+        "inputs": 0,
+        "x": 330,
+        "y": 840,
+        "wires": [
+            [
+                "96832e2ef4a0672e"
+            ]
+        ]
+    },
+    {
+        "id": "928e25745815cb17",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "service-indicator/HCS0x- HCS021-67906/subdevices/subdevice-0/health/Health Motor",
+        "name": "",
+        "inputs": 0,
+        "x": 320,
+        "y": 1020,
+        "wires": [
+            [
+                "060c66a52fdd7bae"
+            ]
+        ]
+    },
+    {
+        "id": "d3f77f292af5c6b9",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL_ServInd/drive_status",
+        "name": "",
+        "inputs": 0,
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "ad374a869b7c53ed"
+            ]
+        ]
+    },
+    {
+        "id": "9c3e4fd205231156",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "28fac954e03ae67d",
+        "g": "79cdb8c64bc1b899",
+        "subscription": "3d0fe01a9e148124",
+        "path": "plc/app/Application/sym/GVL_ServInd/motor_status",
+        "name": "",
+        "inputs": 0,
+        "x": 310,
+        "y": 1080,
+        "wires": [
+            [
+                "a4eaa704a253d563"
+            ]
+        ]
+    },
+    {
         "id": "6d6d725f16f56f70",
         "type": "inject",
         "z": "d1f5bdf400ac6a37",
@@ -1238,25 +1246,6 @@
         ]
     },
     {
-        "id": "1aa61d2cee779147",
-        "type": "ctrlx-datalayer-request",
-        "z": "d1f5bdf400ac6a37",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "devices/drives",
-        "payloadFormat": "value",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 370,
-        "y": 120,
-        "wires": [
-            [
-                "51b87f3397ca5462"
-            ]
-        ]
-    },
-    {
         "id": "51b87f3397ca5462",
         "type": "function",
         "z": "d1f5bdf400ac6a37",
@@ -1274,25 +1263,6 @@
             [
                 "0b6326751c6ed6b5",
                 "5bfc47b71042164a"
-            ]
-        ]
-    },
-    {
-        "id": "5bfc47b71042164a",
-        "type": "ctrlx-datalayer-request",
-        "z": "d1f5bdf400ac6a37",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "",
-        "payloadFormat": "value",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 1210,
-        "y": 120,
-        "wires": [
-            [
-                "557e14a11beb5e8c"
             ]
         ]
     },
@@ -1552,22 +1522,6 @@
         ]
     },
     {
-        "id": "332e0b671184bac2",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "d1f5bdf400ac6a37",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 860,
-        "y": 260,
-        "wires": [
-            [
-                "5aefbc0897c37cb5"
-            ]
-        ]
-    },
-    {
         "id": "5aefbc0897c37cb5",
         "type": "function",
         "z": "d1f5bdf400ac6a37",
@@ -1744,6 +1698,60 @@
         ]
     },
     {
+        "id": "1aa61d2cee779147",
+        "type": "ctrlx-datalayer-request",
+        "z": "d1f5bdf400ac6a37",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "51b87f3397ca5462"
+            ]
+        ]
+    },
+    {
+        "id": "5bfc47b71042164a",
+        "type": "ctrlx-datalayer-request",
+        "z": "d1f5bdf400ac6a37",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            [
+                "557e14a11beb5e8c"
+            ]
+        ]
+    },
+    {
+        "id": "332e0b671184bac2",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "d1f5bdf400ac6a37",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "5aefbc0897c37cb5"
+            ]
+        ]
+    },
+    {
         "id": "1a1ec74452be8dab",
         "type": "inject",
         "z": "f06288a408f5d282",
@@ -1773,25 +1781,6 @@
         ]
     },
     {
-        "id": "4408112263391029",
-        "type": "ctrlx-datalayer-request",
-        "z": "f06288a408f5d282",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "devices/drives",
-        "payloadFormat": "value",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 330,
-        "y": 220,
-        "wires": [
-            [
-                "d7a461d681a4c673"
-            ]
-        ]
-    },
-    {
         "id": "d7a461d681a4c673",
         "type": "function",
         "z": "f06288a408f5d282",
@@ -1812,25 +1801,6 @@
         ]
     },
     {
-        "id": "e0fe231741159342",
-        "type": "ctrlx-datalayer-request",
-        "z": "f06288a408f5d282",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "",
-        "payloadFormat": "value",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 890,
-        "y": 220,
-        "wires": [
-            [
-                "65711f55b58e1d43"
-            ]
-        ]
-    },
-    {
         "id": "65711f55b58e1d43",
         "type": "function",
         "z": "f06288a408f5d282",
@@ -1847,31 +1817,6 @@
         "wires": [
             [
                 "3d3c2312abfa0955"
-            ]
-        ]
-    },
-    {
-        "id": "3d3c2312abfa0955",
-        "type": "ctrlx-datalayer-request",
-        "z": "f06288a408f5d282",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "",
-        "payloadFormat": "value",
-        "name": "browse \"sercos-idns\" ",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 180,
-        "y": 420,
-        "wires": [
-            [
-                "dc0b0ef3cd2e5e68",
-                "43bdbf00ca67f2ea",
-                "8363b9b3afbeb7f9",
-                "d893c847819329c0",
-                "b8ddb6f8842c789e",
-                "ddc32357581e0310",
-                "7a0a1fa60a1c1bc6"
             ]
         ]
     },
@@ -2019,119 +1964,6 @@
             [
                 "5b7c5827d5f3d929",
                 "5b3ae7e6b5d6cd0f"
-            ]
-        ]
-    },
-    {
-        "id": "cabbd35e398599cb",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 380,
-        "wires": [
-            [
-                "313849c5d94c2c3f",
-                "250f04eacff75bfc"
-            ]
-        ]
-    },
-    {
-        "id": "5783b77d47896c78",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 480,
-        "wires": [
-            [
-                "706aea0b3925afbf"
-            ]
-        ]
-    },
-    {
-        "id": "8adacf0c2afda467",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 580,
-        "wires": [
-            [
-                "f086f0895dab9f23"
-            ]
-        ]
-    },
-    {
-        "id": "3b2bbfcf011df81f",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 700,
-        "wires": [
-            [
-                "227d34ffd0530292"
-            ]
-        ]
-    },
-    {
-        "id": "d10d3729c3bcad2f",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 800,
-        "wires": [
-            [
-                "54f886964270ea0a"
-            ]
-        ]
-    },
-    {
-        "id": "7ece81e559c7eec8",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 900,
-        "wires": [
-            [
-                "fd32431c199e8f12"
-            ]
-        ]
-    },
-    {
-        "id": "5b7c5827d5f3d929",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 840,
-        "y": 1000,
-        "wires": [
-            [
-                "0cddd438719e0e30"
             ]
         ]
     },
@@ -2450,70 +2282,6 @@
         "wires": []
     },
     {
-        "id": "7046239a88016b90",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "2a4b6cd0.eece8c",
-        "path": "system/resources/cpu/core0/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 800,
-        "y": 1120,
-        "wires": [
-            [
-                "bbf083b304a7880d"
-            ]
-        ]
-    },
-    {
-        "id": "e566d58f7874ba09",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "2a4b6cd0.eece8c",
-        "path": "system/resources/cpu/core0/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 800,
-        "y": 1160,
-        "wires": [
-            [
-                "eeaabbec8eadd82c"
-            ]
-        ]
-    },
-    {
-        "id": "817e94bce26d5013",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "2a4b6cd0.eece8c",
-        "path": "system/resources/cpu/core0/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 800,
-        "y": 1200,
-        "wires": [
-            [
-                "19363dd6619281a6"
-            ]
-        ]
-    },
-    {
-        "id": "f8db6603abb5ffed",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "f06288a408f5d282",
-        "subscription": "2a4b6cd0.eece8c",
-        "path": "system/resources/cpu/core0/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 800,
-        "y": 1240,
-        "wires": [
-            [
-                "d3d111f2e133cc84"
-            ]
-        ]
-    },
-    {
         "id": "bbf083b304a7880d",
         "type": "function",
         "z": "f06288a408f5d282",
@@ -2594,9 +2362,9 @@
         ]
     },
     {
-        "id": "6d1f9e50d0efe828",
+        "id": "4408112263391029",
         "type": "ctrlx-datalayer-request",
-        "z": "e59631be088750af",
+        "z": "f06288a408f5d282",
         "device": "7b749fd0.a2d9b",
         "method": "BROWSE",
         "path": "devices/drives",
@@ -2604,11 +2372,232 @@
         "name": "",
         "pendingWarnLevel": 50,
         "pendingErrorLevel": 100,
-        "x": 390,
-        "y": 80,
+        "x": 330,
+        "y": 220,
         "wires": [
             [
-                "8742acd509f34d92"
+                "d7a461d681a4c673"
+            ]
+        ]
+    },
+    {
+        "id": "e0fe231741159342",
+        "type": "ctrlx-datalayer-request",
+        "z": "f06288a408f5d282",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "65711f55b58e1d43"
+            ]
+        ]
+    },
+    {
+        "id": "3d3c2312abfa0955",
+        "type": "ctrlx-datalayer-request",
+        "z": "f06288a408f5d282",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "browse \"sercos-idns\" ",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "dc0b0ef3cd2e5e68",
+                "43bdbf00ca67f2ea",
+                "8363b9b3afbeb7f9",
+                "d893c847819329c0",
+                "b8ddb6f8842c789e",
+                "ddc32357581e0310",
+                "7a0a1fa60a1c1bc6"
+            ]
+        ]
+    },
+    {
+        "id": "cabbd35e398599cb",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 380,
+        "wires": [
+            [
+                "313849c5d94c2c3f",
+                "250f04eacff75bfc"
+            ]
+        ]
+    },
+    {
+        "id": "5783b77d47896c78",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 480,
+        "wires": [
+            [
+                "706aea0b3925afbf"
+            ]
+        ]
+    },
+    {
+        "id": "8adacf0c2afda467",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 580,
+        "wires": [
+            [
+                "f086f0895dab9f23"
+            ]
+        ]
+    },
+    {
+        "id": "3b2bbfcf011df81f",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 700,
+        "wires": [
+            [
+                "227d34ffd0530292"
+            ]
+        ]
+    },
+    {
+        "id": "d10d3729c3bcad2f",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 800,
+        "wires": [
+            [
+                "54f886964270ea0a"
+            ]
+        ]
+    },
+    {
+        "id": "7ece81e559c7eec8",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 900,
+        "wires": [
+            [
+                "fd32431c199e8f12"
+            ]
+        ]
+    },
+    {
+        "id": "5b7c5827d5f3d929",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 840,
+        "y": 1000,
+        "wires": [
+            [
+                "0cddd438719e0e30"
+            ]
+        ]
+    },
+    {
+        "id": "7046239a88016b90",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1120,
+        "wires": [
+            [
+                "bbf083b304a7880d"
+            ]
+        ]
+    },
+    {
+        "id": "e566d58f7874ba09",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1160,
+        "wires": [
+            [
+                "eeaabbec8eadd82c"
+            ]
+        ]
+    },
+    {
+        "id": "817e94bce26d5013",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1200,
+        "wires": [
+            [
+                "19363dd6619281a6"
+            ]
+        ]
+    },
+    {
+        "id": "f8db6603abb5ffed",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "f06288a408f5d282",
+        "subscription": "2a4b6cd0.eece8c",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 800,
+        "y": 1240,
+        "wires": [
+            [
+                "d3d111f2e133cc84"
             ]
         ]
     },
@@ -2662,25 +2651,6 @@
         ]
     },
     {
-        "id": "96e4bf362fe4de11",
-        "type": "ctrlx-datalayer-request",
-        "z": "e59631be088750af",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "",
-        "payloadFormat": "value",
-        "name": "browse \"sercos-idns\" ",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 840,
-        "y": 80,
-        "wires": [
-            [
-                "3362fbaf691f3feb"
-            ]
-        ]
-    },
-    {
         "id": "13922bb0e6ce2f5b",
         "type": "influxdb out",
         "z": "e59631be088750af",
@@ -2697,22 +2667,6 @@
         "x": 1140,
         "y": 200,
         "wires": []
-    },
-    {
-        "id": "e266f159476cd1b2",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "",
-        "name": "",
-        "inputs": 1,
-        "x": 580,
-        "y": 200,
-        "wires": [
-            [
-                "162dca900cd8a0ba"
-            ]
-        ]
     },
     {
         "id": "162dca900cd8a0ba",
@@ -2799,70 +2753,6 @@
         "wires": [
             [
                 "e266f159476cd1b2"
-            ]
-        ]
-    },
-    {
-        "id": "539b4ccee2f4bd97",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/resources/cpu/core0/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 420,
-        "y": 420,
-        "wires": [
-            [
-                "6b0d7cc96d5a9881"
-            ]
-        ]
-    },
-    {
-        "id": "0028723f7ea912f8",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/resources/cpu/core1/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 420,
-        "y": 460,
-        "wires": [
-            [
-                "6516a009aa295878"
-            ]
-        ]
-    },
-    {
-        "id": "7d14307f0b13c3ba",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/resources/cpu/core2/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 420,
-        "y": 500,
-        "wires": [
-            [
-                "9939121982dc98b2"
-            ]
-        ]
-    },
-    {
-        "id": "8ac6ebf48eec3919",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/resources/cpu/core3/usage",
-        "name": "",
-        "inputs": 0,
-        "x": 420,
-        "y": 540,
-        "wires": [
-            [
-                "89b72c5ad639f33d"
             ]
         ]
     },
@@ -2962,38 +2852,6 @@
         ]
     },
     {
-        "id": "74ace93d90e60361",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/health/temperature-core/value",
-        "name": "",
-        "inputs": 0,
-        "x": 430,
-        "y": 340,
-        "wires": [
-            [
-                "1069b0b170f6279e"
-            ]
-        ]
-    },
-    {
-        "id": "57d5a0083274f1d4",
-        "type": "ctrlx-datalayer-subscribe",
-        "z": "e59631be088750af",
-        "subscription": "3d0fe01a9e148124",
-        "path": "system/health/temperature-system/value",
-        "name": "",
-        "inputs": 0,
-        "x": 440,
-        "y": 380,
-        "wires": [
-            [
-                "6874c480db4e2de5"
-            ]
-        ]
-    },
-    {
         "id": "1069b0b170f6279e",
         "type": "function",
         "z": "e59631be088750af",
@@ -3030,25 +2888,6 @@
         "wires": [
             [
                 "13922bb0e6ce2f5b"
-            ]
-        ]
-    },
-    {
-        "id": "a3c881f75da112a5",
-        "type": "ctrlx-datalayer-request",
-        "z": "e59631be088750af",
-        "device": "7b749fd0.a2d9b",
-        "method": "BROWSE",
-        "path": "devices/drives",
-        "payloadFormat": "value",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 350,
-        "y": 660,
-        "wires": [
-            [
-                "e35d797a54a8c3d1"
             ]
         ]
     },
@@ -3102,6 +2941,81 @@
         ]
     },
     {
+        "id": "b942bc172a54917b",
+        "type": "function",
+        "z": "e59631be088750af",
+        "name": "Define Data to Store",
+        "func": "let arr_path = []; \narr_path[0] = msg.path + \"/P-0-0440.0.0/data\";      // Output Current Value\n\narr_path[1] = msg.path + \"/P-0-0529.0.0/data\";      // Scaling of Stall Current Limit\narr_path[2] = msg.path + \"/S-0-0001.0.0/data\";      // NC Cycle Time\narr_path[3] = msg.path + \"/S-0-0002.0.0/data\";      // Sercos Cycle Time \n\n\narr_path[4] = msg.path + \"/S-0-0383.0.0/data\"; \narr_path[5] = msg.path + \"/S-0-0380.0.0/data\"; \n\nmsg.path = arr_path;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d1f9e50d0efe828",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "8742acd509f34d92"
+            ]
+        ]
+    },
+    {
+        "id": "96e4bf362fe4de11",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "",
+        "payloadFormat": "value",
+        "name": "browse \"sercos-idns\" ",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "3362fbaf691f3feb"
+            ]
+        ]
+    },
+    {
+        "id": "a3c881f75da112a5",
+        "type": "ctrlx-datalayer-request",
+        "z": "e59631be088750af",
+        "device": "7b749fd0.a2d9b",
+        "method": "BROWSE",
+        "path": "devices/drives",
+        "payloadFormat": "value",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "e35d797a54a8c3d1"
+            ]
+        ]
+    },
+    {
         "id": "44d0c86a7a034afe",
         "type": "ctrlx-datalayer-request",
         "z": "e59631be088750af",
@@ -3121,21 +3035,115 @@
         ]
     },
     {
-        "id": "b942bc172a54917b",
-        "type": "function",
+        "id": "e266f159476cd1b2",
+        "type": "ctrlx-datalayer-subscribe",
         "z": "e59631be088750af",
-        "name": "Define Data to Store",
-        "func": "let arr_path = []; \narr_path[0] = msg.path + \"/P-0-0440.0.0/data\";      // Output Current Value\n\narr_path[1] = msg.path + \"/P-0-0529.0.0/data\";      // Scaling of Stall Current Limit\narr_path[2] = msg.path + \"/S-0-0001.0.0/data\";      // NC Cycle Time\narr_path[3] = msg.path + \"/S-0-0002.0.0/data\";      // Sercos Cycle Time \n\n\narr_path[4] = msg.path + \"/S-0-0383.0.0/data\"; \narr_path[5] = msg.path + \"/S-0-0380.0.0/data\"; \n\nmsg.path = arr_path;\nreturn msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1060,
-        "y": 660,
+        "subscription": "3d0fe01a9e148124",
+        "path": "",
+        "name": "",
+        "inputs": 1,
+        "x": 580,
+        "y": 200,
         "wires": [
-            []
+            [
+                "162dca900cd8a0ba"
+            ]
+        ]
+    },
+    {
+        "id": "539b4ccee2f4bd97",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core0/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "6b0d7cc96d5a9881"
+            ]
+        ]
+    },
+    {
+        "id": "0028723f7ea912f8",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core1/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "6516a009aa295878"
+            ]
+        ]
+    },
+    {
+        "id": "7d14307f0b13c3ba",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core2/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "9939121982dc98b2"
+            ]
+        ]
+    },
+    {
+        "id": "8ac6ebf48eec3919",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/resources/cpu/core3/usage",
+        "name": "",
+        "inputs": 0,
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "89b72c5ad639f33d"
+            ]
+        ]
+    },
+    {
+        "id": "74ace93d90e60361",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/health/temperature-core/value",
+        "name": "",
+        "inputs": 0,
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "1069b0b170f6279e"
+            ]
+        ]
+    },
+    {
+        "id": "57d5a0083274f1d4",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "e59631be088750af",
+        "subscription": "3d0fe01a9e148124",
+        "path": "system/health/temperature-system/value",
+        "name": "",
+        "inputs": 0,
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "6874c480db4e2de5"
+            ]
         ]
     },
     {
@@ -3239,6 +3247,72 @@
         ]
     },
     {
+        "id": "74982e55d190cb84",
+        "type": "inject",
+        "z": "c912ba512df65361",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "7cb477301ed16b0a",
+                "74ff7c52922d83cd",
+                "fb57d296459a6f22",
+                "a638ab6a58529a69"
+            ]
+        ]
+    },
+    {
+        "id": "511db6106b2df53e",
+        "type": "influxdb out",
+        "z": "c912ba512df65361",
+        "influxdb": "a2792ffc94b754f4",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "Bosch Rexroth",
+        "bucket": "Pruefstand Node",
+        "x": 1000,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5f9f31815d55cbf8",
+        "type": "debug",
+        "z": "c912ba512df65361",
+        "name": "debug 175",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
         "id": "1425da02ab5383e3",
         "type": "ctrlx-datalayer-subscribe",
         "z": "c912ba512df65361",
@@ -3304,69 +3378,16 @@
         ]
     },
     {
-        "id": "74982e55d190cb84",
-        "type": "inject",
-        "z": "c912ba512df65361",
+        "id": "c50c53d27a6833c5",
+        "type": "complete",
+        "z": "bcca1e6006854fcc",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 120,
+        "scope": [],
+        "uncaught": false,
+        "x": 170,
+        "y": 160,
         "wires": [
-            [
-                "7cb477301ed16b0a",
-                "74ff7c52922d83cd",
-                "fb57d296459a6f22",
-                "a638ab6a58529a69"
-            ]
+            []
         ]
-    },
-    {
-        "id": "511db6106b2df53e",
-        "type": "influxdb out",
-        "z": "c912ba512df65361",
-        "influxdb": "a2792ffc94b754f4",
-        "name": "",
-        "measurement": "",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "database",
-        "precisionV18FluxV20": "s",
-        "retentionPolicyV18Flux": "",
-        "org": "Bosch Rexroth",
-        "bucket": "Pruefstand Node",
-        "x": 1000,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "5f9f31815d55cbf8",
-        "type": "debug",
-        "z": "c912ba512df65361",
-        "name": "debug 175",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 670,
-        "y": 220,
-        "wires": []
     }
 ]
