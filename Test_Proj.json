@@ -3394,6 +3394,49 @@
         "wires": []
     },
     {
+        "id": "6d7250e190e952b9",
+        "type": "change",
+        "z": "1d69f1d2a6e37922",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92d19c5bb69f8603",
+        "type": "function",
+        "z": "1d69f1d2a6e37922",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "dffc75069db05262",
         "type": "ctrlx-datalayer-request",
         "z": "7aedbeff89cff8e0",
