@@ -3490,5 +3490,34 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9ed1b18397bf3d23",
+        "type": "ctrlx-datalayer-request",
+        "z": "22f82e5452faa969",
+        "method": "READ",
+        "path": "",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b11d260440827c58",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "22f82e5452faa969",
+        "path": "",
+        "name": "",
+        "inputs": 0,
+        "x": 560,
+        "y": 180,
+        "wires": [
+            []
+        ]
     }
 ]
