@@ -40,22 +40,6 @@
         "env": []
     },
     {
-        "id": "bcca1e6006854fcc",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "e129867d2751b20d",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
@@ -3383,37 +3367,6 @@
             [
                 "9685756dd76beb60"
             ]
-        ]
-    },
-    {
-        "id": "c50c53d27a6833c5",
-        "type": "complete",
-        "z": "bcca1e6006854fcc",
-        "name": "",
-        "scope": [],
-        "uncaught": false,
-        "x": 170,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3f786224366b89ba",
-        "type": "function",
-        "z": "bcca1e6006854fcc",
-        "name": "function 1",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 240,
-        "wires": [
-            []
         ]
     }
 ]
