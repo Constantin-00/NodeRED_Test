@@ -40,30 +40,6 @@
         "env": []
     },
     {
-        "id": "bcca1e6006854fcc",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "e129867d2751b20d",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "72f53ff971ea2714",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "909beb40b72950b1",
         "type": "tab",
         "label": "Flow 4",
@@ -3402,34 +3378,19 @@
         ]
     },
     {
-        "id": "c50c53d27a6833c5",
-        "type": "complete",
-        "z": "bcca1e6006854fcc",
-        "name": "",
-        "scope": [],
-        "uncaught": false,
-        "x": 170,
-        "y": 160,
-        "wires": [
-            []
-        ]
+        "id": "083d8fded0262268",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
-        "id": "3f786224366b89ba",
-        "type": "function",
-        "z": "bcca1e6006854fcc",
-        "name": "function 1",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 240,
-        "wires": [
-            []
-        ]
+        "id": "ad7e435751583a05",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
     }
 ]
