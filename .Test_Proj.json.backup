@@ -40,22 +40,6 @@
         "env": []
     },
     {
-        "id": "bde29efc0db550f4",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "37242afe7e77fa4f",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
@@ -3383,23 +3367,6 @@
             [
                 "9685756dd76beb60"
             ]
-        ]
-    },
-    {
-        "id": "f696a426f4bd81b6",
-        "type": "template",
-        "z": "bde29efc0db550f4",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
-        "output": "str",
-        "x": 220,
-        "y": 320,
-        "wires": [
-            []
         ]
     }
 ]
