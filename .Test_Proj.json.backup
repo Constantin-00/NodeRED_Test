@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "37242afe7e77fa4f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
