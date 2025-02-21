@@ -40,25 +40,9 @@
         "env": []
     },
     {
-        "id": "083d8fded0262268",
+        "id": "909beb40b72950b1",
         "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "e129867d2751b20d",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "72f53ff971ea2714",
-        "type": "tab",
-        "label": "Flow 3",
+        "label": "Flow 4",
         "disabled": false,
         "info": "",
         "env": []
@@ -3392,5 +3376,21 @@
                 "9685756dd76beb60"
             ]
         ]
+    },
+    {
+        "id": "083d8fded0262268",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad7e435751583a05",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
     }
 ]
