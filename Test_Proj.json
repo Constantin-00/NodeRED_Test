@@ -40,38 +40,6 @@
         "env": []
     },
     {
-        "id": "a703fb071a476725",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "e8b3c48119a8ad4d",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "08fc68e53f89d658",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "23b61efd0772558a",
-        "type": "tab",
-        "label": "Flow 4",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
