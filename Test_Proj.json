@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "a5eb1b71e7a2d20c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "51fb7b148e5cb4a0",
         "type": "group",
         "z": "28fac954e03ae67d",
@@ -3375,6 +3383,37 @@
             [
                 "9685756dd76beb60"
             ]
+        ]
+    },
+    {
+        "id": "6e8fd80cd94b6649",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "a5eb1b71e7a2d20c",
+        "path": "",
+        "name": "",
+        "inputs": 0,
+        "x": 220,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52359eb976e85a91",
+        "type": "function",
+        "z": "a5eb1b71e7a2d20c",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 220,
+        "wires": [
+            []
         ]
     }
 ]

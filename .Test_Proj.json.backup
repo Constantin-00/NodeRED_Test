@@ -40,22 +40,6 @@
         "env": []
     },
     {
-        "id": "5f60209fe335f3dd",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "7af1f49ca77e501a",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "5c2a667d16ea359c",
         "type": "tab",
         "label": "Flow 3",
